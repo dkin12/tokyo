@@ -35,7 +35,13 @@ https://www.eclipse.org/downloads/
 2. 
 시스템 변수 > 변수 : Path 편집 -> 새로만들기 -> %JAVA_HOME\bin -> 가장 위로 이동
 3. 설치 확인하기
-
+cmd 에 아래와 같이 입력하기 
+`
+java -version
+javac -version 
+`
+=> <img width="778" height="67" alt="image" src="https://github.com/user-attachments/assets/ea5590a6-7f72-46bb-a058-8e2c6058544d" />
+이 나오면 성공
 ## 바이트코드 파일과 자바 가상 머신
 텍스트 에디터에서도 확인 가능 
 ### 자바 가상 머신 
