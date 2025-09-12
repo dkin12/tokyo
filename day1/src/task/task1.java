@@ -1,0 +1,87 @@
+package task;
+
+public class task1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int apple = 12;
+		System.out.println("1. " + apple);
+		int year = 2025;
+		System.out.println("2. " + year);
+		int money = -1000;
+		System.out.println("3. " + money);
+		double length = 9.8;
+		System.out.println("4. " + length);
+		double score = 88.5;
+		System.out.println("5. " + score);
+		double minusValue = -4.6;
+		System.out.println("6. " + minusValue);
+		String food = "떡볶이";
+		System.out.println("7. "+ food);
+		String city = "서울";
+		System.out.println("8. "+ city);
+		String hobby = "코딩";
+		System.out.println("9. "+ hobby);
+		boolean hasCar = false; 
+		System.out.println("10. "+ hasCar);
+		boolean isStudent = true;
+		System.out.println("11. "+ isStudent);
+		boolean isWeekend = false;
+		System.out.println("12. "+ isWeekend);
+		
+		System.out.println("=======================");
+		
+		int a = 10;
+		int b = 3; 
+		System.out.println("1-1.  " + (a+b));
+		System.out.println("1-2.  " + (a-b));
+		System.out.println("1-3.  " + (a*b));
+		System.out.println("1-4.  " + (a/b));
+		System.out.println("1-5.  " + (a%b));
+		
+		int sum = 12 + 8 ; 
+		System.out.println("2. " + sum);
+		int total = 20 / 3; 
+		System.out.println("3. " + total);
+		int mod = 14 % 5;
+		System.out.println("4. " + mod);
+		
+		System.out.println("5. 5 % 5의 결과 : 5/5의 결과가 1이므로 5 * 1 = 5 이므로 나머지가 0");
+		System.out.println("6. 5 % 4의 결과 : 5/4의 결과가 0이므로 5 * 0 = 0 이므로 나머지가 4");
+		System.out.println("7. 5 % 3의 결과 : 5/3의 결과가 0이므로 5 * 0 = 0 이므로 나머지가 3");
+		System.out.println("8. 5 % 2의 결과 : 5/2의 결과가 0이므로 5 * 0 = 0 이므로 나머지가 2");
+		System.out.println("9. 5 % 1의 결과 : 5/1의 결과가 0이므로 5 * 0 = 0 이므로 나머지가 1");
+		System.out.println("10. 5 % 0의 결과 : 5/0의 결과가 0이므로 5 * 0 = 0 이므로 나머지가 5");
+		System.out.println("11. 5 % 7의 결과 : 5/7의 결과가 1이므로 5 * 1 = 5 이므로 나머지가 2");
+
+		boolean result1 = 15 > 20;
+		System.out.println("12. " + result1);
+		boolean result2 = 10 == 10;
+		System.out.println("13. " + result2);
+		boolean result3 = 7 <= 3;
+		System.out.println("14. " + result2);
+		a = 5;
+		b = 7;
+		System.out.println("15-1.  " + (a>b));
+		System.out.println("15-2.  " + (a<b));
+		System.out.println("15-3.  " + (a==b));
+		System.out.println("15-4.  " + (a!=b));		
+		System.out.println("15-5.  " + (a>=b));		
+		System.out.println("15-6.  " + (a<=b));
+		
+		boolean logic1 = 10 > 5 && 2 > 1 ;
+		boolean logic2 = 3 == 7 || 6 < 2 ;
+		boolean logic3 = 8 != 8;
+		System.out.println("16. " + logic1);
+		System.out.println("17. " + logic2);
+		System.out.println("18. " + logic3);
+		boolean x = true;
+		boolean y = false; 
+		
+		System.out.println("19-1. " + (x&&y));
+		System.out.println("19-2. " + (x||y));
+		System.out.println("19-3. " + (!x));
+		System.out.println("19-4. " + (!y));
+	}
+
+}

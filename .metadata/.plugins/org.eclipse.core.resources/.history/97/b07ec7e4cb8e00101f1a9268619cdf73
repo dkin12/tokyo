@@ -1,0 +1,33 @@
+package ch1;
+
+import java.util.Scanner;
+
+public class task {
+
+	public static void main(String[] args) {
+		System.out.println("2025.09.11");
+		
+		// 1. 비밀번호 맞추기
+		String password = "qwer1234";
+		String inputPassword = "qwer1234";
+		if(password.equals(inputPassword)) {
+			System.out.println("비밀번호가 맞아요!");
+		}else {
+			System.out.println("비밀번호가 틀렸어요!");
+		}
+		// 2. 1번 문제를 사용자 입력으로 
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("비밀번호를 입력하세요 : ");
+		inputPassword = scanner.nextLine();
+		if(password.equals(inputPassword)) {
+			System.out.println("비밀번호가 맞아요!");
+		}else {
+			System.out.println("비밀번호가 틀렸어요!");
+		}
+		
+		// 3.좋아하는 동물 찾기
+		String animal = "강아지";
+		
+	}
+
+}

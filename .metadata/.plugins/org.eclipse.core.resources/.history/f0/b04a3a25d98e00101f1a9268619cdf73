@@ -1,0 +1,38 @@
+package ch1;
+
+import java.util.Scanner;
+
+public class Control4 {
+
+	public static void main(String[] args) {
+		// 토요일, 일요일 을 입력하면 주말 출력, 월~금요일을 입력하면 주중 출력 
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String day = "";
+		
+		day = scanner.nextLine();
+		String text = "";
+		
+		if(day.equals("토요일") || day.equals("일요일")) {
+			text = "주말";
+		}else {
+			text = "주중";
+		}
+		System.out.println(text);
+		
+		switch(day) {
+			case "일요일" : text = "주말"; break;
+			case "월요일" : text = "주중"; break;
+			case "화요일" : text = "주중"; break;
+			case "수요일" : text = "주중"; break;
+			case "목요일" : text = "주중"; break;
+			case "금요일" : text = "주중"; break;
+			case "토요일" : text = "주말"; break;
+			default : System.out.println("올바른 텍스트를 입력하세요."); return;
+		}
+		System.out.println(text);
+		
+	}
+
+}

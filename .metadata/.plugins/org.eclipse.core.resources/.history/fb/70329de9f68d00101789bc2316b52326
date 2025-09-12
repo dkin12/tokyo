@@ -1,0 +1,46 @@
+package ch2;
+/*
+연산자란? 
+값을 계산하거나 비교할 때 사용하는 기호
+*/
+public class Operation1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 산술 연산자 : +, - , * , /, %
+		int a = 10 + 5;
+		int b = 10 - 5;
+		int c = 6 * 3;
+		int d = 9 / 4;
+		int e = 9 % 4 ; // 나머지 값 
+		System.out.println(d);
+		System.out.println(e);
+		
+		// 비교 연산자 : ==, != , >, <, >= ,<= 
+		
+		boolean isSame = 5 == 5 ; // 같다. 
+		boolean isDiff = ( 5 != 7 ); // 같지않다. 
+		boolean isBig = 3 > 10; // 크다. 
+		boolean isSmall = 3 < 10; // 작다. 
+		boolean isGt = (7 >= 7); // 크거나 같다. 
+		boolean isLt = (4 <= 7); // 작거나 같다.
+		
+		
+		System.out.println(isSame);
+		System.out.println(isDiff);
+		System.out.println(isBig);
+		System.out.println(isSmall);
+		System.out.println(isGt);
+		System.out.println(isLt);
+		
+		// 논리 연산자 : &&(AND), ||(OR), !(Not)
+		boolean out1 = (5>2) && (10<20); // A 조건 && B 조건 둘다 만족시켰을 때
+		boolean out2 = (5>2) || (10<20); // A 조건 || B 조건 중 하나만 만족시켰을 때
+		
+		System.out.println(out1);
+		System.out.println(out2);
+		
+		
+	}
+
+}
