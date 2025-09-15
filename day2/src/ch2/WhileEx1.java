@@ -45,9 +45,11 @@ public class WhileEx1 {
 		num1 = scanner.nextInt();
 		num2 = scanner.nextInt();
 		
+		// 한번만 실행
 		int count = 0;
 		while(count < 1 ) {
 			sum = num1 + num2;
+			count ++; // 증가되면 다음은 반복하지 않음
 		}
 	}
 
