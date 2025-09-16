@@ -7,8 +7,7 @@ public class Task {
 	
 	
 	public static void main(String[] args) {
-		// 1. 치킨 한 마리에 8조각
-		System.out.println(test(60));
+		
 	}
 	
 	// 1. 치킨 한 마리에 8조각
@@ -30,10 +29,6 @@ public class Task {
 	}
 	// 5. 아무것도 안받고 출력하면서 랜덤으로 추천 
 	public static String eat() {
-		int one = 1;
-		int two = 2;
-		int three = 3;
-		int four = 4;
 		Random rd = new Random();	
 		int choose = rd.nextInt(4);
 		String menu = "";
