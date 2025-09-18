@@ -3,10 +3,7 @@ package ch1;
 public class Task {
 
 	public static void main(String[] args) {
-		// 1. K Pop 
-		
 
-		// 2. Pizza 클래스 
 		Dog dog1 = new Dog("흰둥이",3,"믹스",null,3,false);
 		Pizza pizza = new Pizza("페퍼로니",'L');
 		pizza.order();
