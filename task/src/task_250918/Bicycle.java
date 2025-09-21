@@ -13,7 +13,7 @@ public class Bicycle implements Vehicle{
 	}
 
 	@Override
-	public void move() {
+	public void move() { // 와 이게 최선이에요?
 		speed += 2;
 		System.out.println("현재 속도는 : " + speed);
 		
