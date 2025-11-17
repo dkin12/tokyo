@@ -1,0 +1,17 @@
+package com.example.test.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserDto {
+    private Integer id;
+    private String name;
+    private Integer age;
+    private LocalDateTime regDate;
+}
