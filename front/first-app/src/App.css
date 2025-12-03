@@ -1,0 +1,10 @@
+.borderTop{
+   border-top: 2px solid lightgray;
+    padding: 16px;
+    margin : 16px 0;
+}
+
+.fontStyle{
+    font-weight: bold;
+    color: #6d856c;
+}

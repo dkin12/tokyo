@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>단락회로평가</title>
+</head>
+<body>
+<h1>단락회로평가, 단락평가</h1>
+<ul>
+  <li>truthy:참인듯?</li>
+  <li>false(falset) : 거짓인듯? <br>
+      false,0,-0,(-1,-2..),"",null,undefined,Nan
+  </li>
+
+
+</ul>
+<h2>boolean &&(AND) 구문</h2>
+<ul>
+    <li>조건 && 구문 : A,B 조건 모두 참인 경우 </li>
+    <li>&& 앞의 조건이 true인 경우</li>
+    <li>&& 앞의 조건이 false인 경우 </li>
+</ul>
+<ul>
+    <li>조건 || 구문 : 두 조건 중 하나만 참인 경우</li>
+    <li>|| 앞 조건이 true인 경우 -> 뒤 구문을 읽지 않고 종료 </li>
+    <li>|| 앞 조건이 false인 경우 -> 뒤 구문 실행 ( 내용 반환 ) </li>
+</ul>
+<script>
+    if(11>10) console.log("참입니다.");
+    (11>10) ? console.log("참입니다.") : false;
+    (11>10) ? console.log("참입니다.") : null;
+    console.log("====== 단락회로 평가");
+    (11>10) && console.log("truthy한 상황");
+
+    /*
+    if(조건)
+        참1
+    else if(조건) 참2
+    else 참3임
+    (조건 2 ) && 결과2
+    (조건 3 ) && 결과3
+    (조건 4 ) && 결과4
+*/
+    // A의 값이 거짓인 경우 B를 탐색할 필요도 없이 거짓이 되므로 false
+    console.log("-- &&");
+    false && console.log("거짓이면 이 내용은 보이지 않음 ");
+    true && console.log("조건이 참이면 이 내용은 보");
+
+    console.log(
+        true && false && true
+    );// 출력안됨 false가 들어있기 때문에
+
+    console.log(
+        11 > 10 && 10 == 11 && '출력되지 않음'
+    );
+
+    console.log("-- ||")
+    // A가 참이면 B를 탐색할 필요없이 멈춤
+    true || console.log("A가 참이면 이 내용은 반환되지 않음");
+    // A가 거짓이면 B를 탐색해야 참인지 거짓인지 판단할 수 있기 때문에 읽음
+    false || console.log("A가 거짓이면 이 내용은 반환");
+
+    console.log("" || "여기서 멈춤" || 222);// false, true, true 여기서 멈춤
+    console.log("" || null || 222); // false, false, true 22
+    const done = true;
+    const result1 = done === true ? true : false;
+    console.log(result1);
+    const result2 = done === true && "참";
+    console.log(result2);
+</script>
+</body>
+</html>

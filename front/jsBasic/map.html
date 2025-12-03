@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <h1>Array.prototype.map()</h1>
+    <ui>
+        <li>배열 내의 모든 요소 각각의 함수를 호출한 결과를 모아 새로운 배열로 반환</li>
+        <li>arr.map(콜백함수(요소[,인덱스]) => {})</li>
+        <li>arr.forEach(콜백함수(요소[,인덱스])=>{}) 와 유사. undefined</li>
+    </ui>
+
+<script>
+    const arr = [10,20,30];
+    console.log(arr[0]);
+
+    console.log("--- 기본 ");
+    arr.map((elem,index)=>{
+        console.log(elem);
+        console.log(index);
+        console.log(arr);
+        console.log(elem * elem);
+        console.log("==")
+    });
+    arr.map((item,index)=>  console.log(`${index +1 }번 값은 ${item}`));
+    console.log("== 객체")
+
+    const data = [
+        {id:1,name:"한라봉",age:2},
+        {id:2,name:"진지향",age:3},
+        {id:3,name:"천혜향",age:1},
+        {id:3,name:"타이백",age:5},
+    ];
+    data.forEach((elem,index)=>{
+        console.log(`배열요소 : ${elem},인덱스 번호 : ${index}`);
+    });
+    data.map((elem,index)=>{
+        console.log(`배열요소: ${elem.name},인덱스 번호 : ${index}`);
+    });
+
+</script>
+</body>
+</html>

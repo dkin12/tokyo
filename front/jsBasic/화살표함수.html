@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 함수 ( lambda ) </title>
+
+
+</head>
+<body>
+<script>
+  function make1() {
+    alert("이름이 있는 선언 함수");
+  }
+  // 함수 호출
+  // make1();
+  const make2 = function (){
+    alert("이름이 없는 익명 함수")
+  }
+  // make2();
+
+  // const 함수명 = () => {}
+  const make3 = function (){
+    alert("화살표 함수")
+  }
+  // make3();
+
+  const make4 = (name) => console.log(`${name}님 안녕하세요?`);
+  make4("한라봉")
+
+  const make5 = (a,b) =>  console.log(`${a} + ${b}의 합은 ${a+b}입니다.`);
+  make5(10,30); // 10+30의 합은 40입니다.
+
+</script>
+
+</body>
+</html>

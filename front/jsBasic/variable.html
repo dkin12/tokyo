@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>variable</title>
+  <!-- 외부 선언 defer속성은 문서를 불러온 다음 실행하게 해 줌 -->
+  <script src="파일.js"></script>
+  <!-- 내부 선언 -->
+  <script>
+    // window.alert('알림창')
+    // alert('알림창');
+    /*
+    문서 준비 이벤트
+    window.onload = function () {}
+    window.addEventListener("DOMContentLoaded",() => {}) // 데이터까지 불러올때 까지 기다림
+    addEventListener("DOMContentLoaded",() => {} ) // 구조만 먼저 불러옴
+    */
+    addEventListener("DOMContentLoaded",() => {
+      document.querySelector("#title").addEventListener("click", function () {
+        document.body.style.backgroundColor = "#96ea8f";
+      });
+    });
+
+    </script>
+</head>
+<body>
+
+  <h1 id = "title"> 변수 </h1>
+
+  <!-- 내부 선언 : 제일 많이 작성하는 위치-->
+  <script>
+    // 상수 : 불변값, 재할당, 재선언
+
+    const c = 100;
+    const name = "Toyko";
+
+    // 변수
+    var a = 100;
+    var b = 200; // 재선언
+    a = 300;
+    { // 블록 스코프
+      var a = 400;
+      console.log("블록문 안의 a: ", a);
+
+    }
+
+    let b = 100;
+    b = 300; // 재 할당
+    // let b = 200; 재 선언 안됨
+    console.log("var : " , a );
+    console.log("let : ", b );
+    { // 여기 안이면 범위 안에서만 사용할 수 있는 지역 변수가 됨
+      let b = 400; // 지역변수
+      console.log("블록문 안의 b: ", b );
+    }
+  </script>
+
+  
+</body>
+</html>

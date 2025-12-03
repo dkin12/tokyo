@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find</title>
+</head>
+<body>
+  <h1>Array.prototype.find()</h1>
+  <ul>
+    <li>arr.find(callback(현재 요소[,인덱스 번호]) -> {})</li>
+    <li>함수의 결과 값을 첫번째 .. </li>
+    <li></li>
+  </ul>
+
+<script>
+  const arr = [10, 20, 30, 40, 50];
+  const data = [
+    {id:1,name:"한라봉",age:2},
+    {id:2,name:"진지향",age:3},
+    {id:3,name:"천혜향",age:1},
+    {id:4,name:"타이백",age:5},
+  ];
+
+  const r1 = arr.find(n=> n == 30);
+  console.log(r1);
+  const r2 = data.find(elem => elem.id === 4);
+  console.log(r2)
+  const r3 = data.find(elem => elem.id != 3);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spread</title>
+</head>
+<body>
+
+<ul>
+  <li>표기 방식 : ...</li>
+  <li>배열,객체,문자열 등을 <strong>**복사**</strong>해 반환</li>
+  <li>
+    <pre>
+      함수 호출 : myFn(..Obj);
+      배열, 문자열 : [...Obj,"4","five",6];
+      객체 : const array = { ...obj };
+    </pre>
+  </li>
+</ul>
+<script>
+  const arr = ['한라봉','진지향','타이백'];
+  // 배열이나 객체를 복사
+  console.log(arr.concat());
+  console.log([...arr]);
+
+  console.log("=")
+  const add1 = arr.concat("감흥","부사");
+  const add2 = arr.concat("망고","파인애플",...arr);
+  console.log(add1);
+  console.log(add2);
+  console.log("==객체");
+  const dog = {
+    name: "마루",
+    age: 5
+  };
+  const dog2 = {
+    name: "솜이",
+    age: 8
+  };
+
+
+  const dogs = {...dog, ...dog2};
+  // 뒤에 프로퍼티(속성)을 추가하면 갱신되는 성격이 있음
+  console.log(dogs);
+
+  const cat = {
+    name : "치즈냥",
+    age: 3
+  };
+  const cats = {...cat,age:1}
+  console.log(cats); // age만 수정됨
+
+  const data = [
+    {id:1,name:'한라봉',age:2},
+    {id:2,name:'진지향',age:3},
+    {id:3,name:'천혜향',age:1},
+    {id:4,name:'타이백',age:5},
+  ];
+
+  const r4 = [...data,{id:5,name:"레드향",age:2}];
+  console.log(r4);
+  const r5 = r4.map(elem => {
+    // === 엄격한 비교( 데이터 타입 )
+    if(elem.id === 3){
+      return {
+        name : '유라조생'
+      }
+    }else return elem;
+  })
+
+  console.log(r5);
+
+  console.log("--react 버전");
+
+  const r6 = r4.map(item=> (item.id===3)?{...item,name:"윈터프린스"}:item);
+  console.log(r6);
+
+
+
+
+</script>
+</body>
+</html>

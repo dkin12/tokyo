@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indexOf</title>
+</head>
+<body>
+<h1>Array.prototype.indexOf()</h1>
+<ul>
+  <li>배열에서 특정 값의 위치를 찾는 메서드</li>
+  <li>값이 있으면 인덱스 번호로 반환, 없으면 -1 반환</li>
+  <li>arr.indexOf(찾을 값[,검색위치])</li>
+</ul>
+
+<script>
+  const arr = [10, 20, 30, 40, 50];
+  const mandarin = ['한라봉','천혜향','유라조생','타이백','진지향'];
+  const txt = "향";
+
+  const result = mandarin.filter(item => item.indexOf('감')!==-1);
+  console.log(result);
+  console.log(mandarin.indexOf(txt)); // 인덱스 번호로 반환 0
+</script>
+
+</body>
+</html>

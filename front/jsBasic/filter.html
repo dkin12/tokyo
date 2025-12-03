@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter</title>
+</head>
+<body>
+<ul>
+  <li>배열의 복사본을 생성하고 함수에 의해 통과한 요소만 보아 배열로 반환</li>
+  <li>arr.filter(callbackFn(현재요소[,인덱스번호])=>{});</li>
+  <li>false인 경우 빈 배열로 반환, true인 경우 찾은 값 전부 복사본으로 반호나</li>
+</ul>
+<script>
+  const arr = [10, 20, 30, 40, 50];
+  const data = [
+    {id:1,name:"한라봉",age:2},
+    {id:2,name:"진지향",age:3},
+    {id:3,name:"천혜향",age:1},
+    {id:4,name:"타이백",age:5},
+  ];
+  const r1 = arr.filter(n => n>=30);
+  console.log(r1);
+
+  // 30 뺀 나머지 출력
+  // 데이터를 삭제할 때 주로 사용
+  const r2 = arr.filter();
+  console.log(r2); // [10,20,30,40]
+
+  // 사용자가 선택한 아이디 2번 삭제
+  const r3 = arr.filter(elem => elem.id != 2);
+  console.log(r3);
+
+</script>
+</body>
+
+</html>
