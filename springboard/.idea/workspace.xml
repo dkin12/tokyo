@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d93e8b81-2c09-491e-94c8-d1209fa8cfc5" name="Changes" comment="springBoard 업로드">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboard/SpringboardApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springboard/SpringboardApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="d93e8b81-2c09-491e-94c8-d1209fa8cfc5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,51 +15,76 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dkin12"
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dkin12&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dkin12/tokyo.git",
-    "accountId": "ef2ce408-33bf-4730-b6c7-d37a0679aa4a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dkin12/tokyo.git&quot;,
+    &quot;accountId&quot;: &quot;ef2ce408-33bf-4730-b6c7-d37a0679aa4a&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="36JgcI5fZNqgL4HdcHbuUUSG0LM" />
   <component name="ProjectViewState">
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ichaeyeon/Desktop/tokyo/springboard",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build springboard.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringboardApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ichaeyeon/Documents/4_GYC/2_dev/springboard&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,24 +112,58 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764730166071</updated>
-      <workItem from="1764730167086" duration="399000" />
+      <workItem from="1764730167086" duration="250000" />
+      <workItem from="1764731114196" duration="171000" />
+      <workItem from="1764731448694" duration="2369000" />
+      <workItem from="1764820941447" duration="8432000" />
+      <workItem from="1764830680559" duration="667000" />
+      <workItem from="1764907168668" duration="8985000" />
+      <workItem from="1765252989483" duration="6140000" />
+      <workItem from="1765433326277" duration="1150000" />
+      <workItem from="1765512976648" duration="7824000" />
+      <workItem from="1765769957004" duration="2260000" />
+      <workItem from="1765772341508" duration="1914000" />
+      <workItem from="1765776661355" duration="4147000" />
+      <workItem from="1765784754234" duration="192000" />
+      <workItem from="1765858193756" duration="2352000" />
+      <workItem from="1765868213378" duration="1429000" />
+      <workItem from="1765937378240" duration="2801000" />
+      <workItem from="1765952165736" duration="5000" />
+      <workItem from="1765952787658" duration="93000" />
+      <workItem from="1765970862427" duration="1655000" />
+      <workItem from="1766030467399" duration="7772000" />
+      <workItem from="1766117617115" duration="4428000" />
+      <workItem from="1766237629616" duration="572000" />
+      <workItem from="1766376120649" duration="6102000" />
+      <workItem from="1766385648500" duration="3303000" />
+      <workItem from="1766468910916" duration="3469000" />
+      <workItem from="1766483797889" duration="13000" />
+      <workItem from="1766541793221" duration="5732000" />
+      <workItem from="1766721663050" duration="9509000" />
+      <workItem from="1766796597650" duration="10208000" />
+      <workItem from="1766928530594" duration="1292000" />
+      <workItem from="1766981335580" duration="7192000" />
+      <workItem from="1767067158016" duration="6425000" />
+      <workItem from="1767146116566" duration="4238000" />
+      <workItem from="1767279103899" duration="1788000" />
+      <workItem from="1767326547093" duration="1951000" />
+      <workItem from="1767365024931" duration="1224000" />
+      <workItem from="1767465898712" duration="2855000" />
+      <workItem from="1767498625383" duration="139000" />
+      <workItem from="1767502729319" duration="7089000" />
+      <workItem from="1767606373155" duration="1975000" />
+      <workItem from="1767712254656" duration="717000" />
+      <workItem from="1767747526141" duration="426000" />
     </task>
-    <task id="LOCAL-00001" summary="springBoard 업로드">
-      <option name="closed" value="true" />
-      <created>1764730981967</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1764730981967</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="springBoard 업로드" />
-    <option name="LAST_COMMIT_MESSAGE" value="springBoard 업로드" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
 </project>
