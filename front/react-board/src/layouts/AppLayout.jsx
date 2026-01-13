@@ -1,21 +1,34 @@
 // header + menu + Outlet
 
 import React from 'react';
-import { Link, Outlet } from 'react-router';
+import { Link, Outlet, useNavigate } from 'react-router';
 import { Box, AppBar, Toolbar, Typography, Container, Stack, Button } from '@mui/material';
 import { LuDog } from "react-icons/lu";
+import { useQueryClient } from '@tanstack/react-query';
+import { useMe } from '../hooks/useMe';
+import { clearAuth, ME_QUERY_KEY } from '../api/authApi';
 
 function AppLayout() {
-    return (
-        <Box sx={{ minHeight: '100vh', bgcolor: '#faf4cfff' }}>
+    const queryClient = useQueryClient();
+    const { data: me, isLoading: meIsLoading } = useMe();
+    const navigate = useNavigate();
+    // 로그아웃 이벤트 핸들러 
+    const handleLogout = () => {
+        clearAuth();
+        queryClient.setQueryData(["me"], null); // 즉시 업데이트
+        navigate("/posts");
+    }
 
-            <AppBar position='fixed'>
+    return (
+        <Box sx={{ minHeight: '100vh', bgcolor: '#b6f0b5ff' }}>
+
+            <AppBar position='fixed' sx={{ bgcolor: '#ffe75eff' }}>
                 <Container maxWidth='md'>
                     <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
                         {/* 로고  */}
                         <Box component={Link} to="/posts" sx={{
                             display: 'flex', alignItems: 'center',
-                            textDecoration: 'none', color: '#fff'
+                            textDecoration: 'none', color: '#000'
                         }}>
 
 
@@ -24,7 +37,7 @@ function AppLayout() {
                             <Box sx={{
                                 width: 40, height: 40,
                                 borderRadius: '50%',
-                                bgcolor: '#faf4cfff',
+                                bgcolor: '#faf7efff',
                                 display: 'grid',
                                 placeItems: 'center',
                                 mr: 1.5
@@ -43,8 +56,20 @@ function AppLayout() {
                         </Box>
                         {/* 회원가입 / 로그인  */}
                         <Stack direction="row" spacing={0.8} alignItems={"center"} >
-                            <Button component={Link} to="/posts" variant='text' sx={{ color: '#fff' }}>로그인</Button>
-                            <Button component={Link} to="/posts" variant='text' sx={{ color: '#fff' }}>회원가입</Button>
+                            {
+                                !meIsLoading && me ?
+                                    (
+                                        // 로그아웃
+                                        <Button variant='text' sx={{ color: '#fff' }} onClick={handleLogout}>로그아웃</Button>
+                                    ) : (
+
+                                        <>
+                                            <Button component={Link} to="/auth/login" variant='text' sx={{ color: '#000' }}>로그인</Button>
+                                            <Button component={Link} to="/auth/register" variant='text' sx={{ color: '#000' }}>회원가입</Button>
+                                        </>
+                                    )
+                            }
+
                         </Stack>
                     </Toolbar>
                 </Container>

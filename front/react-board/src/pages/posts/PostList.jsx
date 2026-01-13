@@ -3,11 +3,12 @@ import { Box, Paper, Typography, Stack } from '@mui/material';
 import PostSearch from '../../components/posts/PostSearch';
 import PostTable from '../../components/posts/PostTable';
 import PostPagination from '../../components/posts/PostPagination';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import { useState } from 'react';
 import Loader from '../../components/common/Loader';
 import ErrorMessage from '../../components/common/ErrorMessage';
-import { fetchPosts } from '../../api/postsAPi';
+import { fetchPosts } from '../../api/postsApi';
+import { useMe } from '../../hooks/useMe';
 
 
 function PostList() {
@@ -22,9 +23,12 @@ function PostList() {
 
         queryKey: ['posts', page, keyword],
         queryFn: () => fetchPosts({ page, size: 10, keyword }),
-        keepPreviousData: true,
+        placeholderData: keepPreviousData
         // 페이지 전환시 기존 데이터 유지 화면에 빈 화면이 생기지 않음
     });
+
+    const { data: me, isLoading: meIsLoading } = useMe();
+
     if (isLoading) return <Loader />
     if (isError) return <ErrorMessage />;
 
@@ -76,6 +80,7 @@ function PostList() {
                         totalPages={totalPages}
                         onPrev={handlePrev}
                         onNext={handleNext}
+                        logined={!meIsLoading && !!me}
                     />
                 </Box>
 

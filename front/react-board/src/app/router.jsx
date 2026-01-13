@@ -3,6 +3,9 @@ import AppLayout from "../layouts/AppLayout";
 import PostList from "../pages/posts/PostList";
 import PostForm from "../pages/posts/PostForm";
 import PostDetail from "../pages/posts/PostDetail";
+import LoginPage from "../pages/auth/LoginPage"
+import RegisterPage from "../pages/auth/RegisterPage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 export const router = createBrowserRouter([
     {
@@ -29,6 +32,19 @@ export const router = createBrowserRouter([
             {
                 path: 'posts/:id/edit',
                 element: <PostForm mode="edit" />
+            },
+            {
+                // 로그인
+                path: 'auth/login',
+                element: <LoginPage />
+            },
+            { // 회원가입 
+                path: 'auth/register',
+                element: <RegisterPage />
+            },
+            {
+                path: '*',
+                element: <NotFoundPage />
             }
         ]
     }

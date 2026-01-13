@@ -1,10 +1,29 @@
 import React from 'react';
+import { Box, Button, Stack, Typography } from "@mui/material";
 
-function PostFormImage(props) {
+function PostFormImage({ imageName, onChangeImage, uploading }) {
   return (
-    <div>
+    <Box>
+      <Stack direction='row' alignItems='center' spacing={1.6} mb={1}>
+        <Button variant="outlined" component="label" disabled={uploading}>
+          이미지 선택
+          <input type="file" hidden accept="image/*"
+            onChange={onChangeImage}
+          />
+          {/*
+                    <input type="file" hidden accept="image/*"
+                           onChange={() => onChangeImage(evt.target.files[0], evt)}
+                    />
+                    */}
+        </Button>
 
-    </div>
+        {!uploading && imageName && (
+          <Typography variant="body2" color="#666">
+            {imageName}
+          </Typography>
+        )}
+      </Stack>
+    </Box>
   );
 }
 
